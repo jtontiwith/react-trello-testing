@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: cS+mxYKiVG0tn5jy44V4cUVDNJ+u8oYxYthMRNCLCMLvHZr9VGdSUlJbNNj4bQRj/mFHI+zTHORvmjLpHMCuGhJIA2/j7zA/L1jAt6TcLcma/r21hX4fQoKTytgp5cD7iZVwd8x14h1CTuwisdKDqBBlZqE0vufkJgBdac/jNstUlvPPeqR/yrv4+sOgCl+1MQwuLfrAzTFZcdGeow43GSNPyfhYB6M/QSvDF5SO0bCyiaiJb7WHvWhmKKr/vpRl8W31SW0/mWum6UvpUYsXzloF67Tt/werOkTyO99JTfS5wtlpHFX6u/lwEDxomXa1qVuUbxEZ+fH2D02+kJaSq1jgBtwp/Oxr8Tp+qjn5g6Ll936NSPc12vOc/KEKbWoZn5UYbRscFOCasjQi0snE7DqdAR51+ZL/jZqqXuAihRsYIYo+X9H7shKoR3zob/qmmIT6z3Su35wpBnEkfHRgJufo8bh1Io9U8ssusF7sUn3opt7PxR8jBSyUae2dsxsCVgSQelKjfr0J0zlEjw7MIktA4CRjZAyOBHi17mpOIZ6T80xoY8B07/UXs4bpYp6pPbjuS0fPMA/gjIUDpcIu+8wzWeycqWeE4l6cZ22aGNcucmXDjtDt8riSeDiZcrXfbfOoKIK5OYGx+pM+IVp+gNPbAuiL1Ca6W6VcoY0kuaE=
+  app: mysterious-meadow-49698
+  on:
+    repo: jtontiwith/react-trello-testing
